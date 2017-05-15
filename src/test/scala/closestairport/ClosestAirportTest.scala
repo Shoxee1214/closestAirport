@@ -16,10 +16,8 @@ class ClosestAirportTest {
     val sqlContext = new SQLContext(sc)
 
     val airportDF = Utils.ingestCsvData(Constants.AIRPORT_DATA_PATH, sqlContext)
-    val userDF = Utils.ingestCsvData(Constants.USERS_DATA_PATH, sqlContext)
     assertEquals(airportDF.count(), Constants.AIRPORT_SIZE)
-    assertEquals(userDF.count(), Constants.USERS_SIZE)
-
+    
   }
 
   @Test
