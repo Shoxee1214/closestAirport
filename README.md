@@ -12,3 +12,5 @@ This project requires 3 input arguments. First input argument is the path of air
 1) You can clone this maven project and load it in eclipse and just by giving the required three argument run this program
 2) You can build this project using "maven clean install" and run it using "spark-submit --class closestairport.Driver --master local[*] "jar-path" "airport-data-path" "user-data-path" "output-path" 
 
+### Sample Output
+I've also included the sample output file in "resources/sampleOutput-100.csv". This file contains top 100 users with closest airports. I've generated this file with the given code. 
